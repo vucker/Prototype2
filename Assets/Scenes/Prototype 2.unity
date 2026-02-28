@@ -492,7 +492,7 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 45
-  orthographic: 0
+  orthographic: 1
   orthographic size: 10
   m_Depth: -1
   m_CullingMask:
@@ -541,7 +541,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3e39bd096e7a3248abce16e0ebf88cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 60
   xRange: 20
   projectileObject: {fileID: 5962062494863430872, guid: 1533dfc62b2f3994fb5a4cd5f70fef41, type: 3}
   horizontalInput: 0
