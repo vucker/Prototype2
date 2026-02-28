@@ -9,8 +9,15 @@ public class DestroyOutOfBounds : MonoBehaviour
 
     void Update()
     {
-        if (transform.position.z > topBound || transform.position.z < downBound)
+        //условие для уничтожения снарядов
+        if (transform.position.z > topBound)
         {
+            Destroy(gameObject);
+        }
+        //условие для уничтожения животных и поражения
+        else if (transform.position.z < downBound)
+        {
+            Debug.Log("Game Over");
             Destroy(gameObject);
         }
     }

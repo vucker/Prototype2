@@ -12,12 +12,16 @@ public class SpawnManager : MonoBehaviour
 
     private void Start()
     {
+        //Фунция для запуска функции интервалами
         InvokeRepeating("SpawnRandomAnimal", startDelay, interval);
     }
     void SpawnRandomAnimal()
     {
+        //Позиция для спавна
         Vector3 spawnPos = new Vector3(Random.Range(-spawnPosX, spawnPosX), 0f, spawnPosZ);
+        //Рандомный индекс для животных
         int animalIndex = Random.Range(0, animalPrefabs.Length);
+        //Призыв животного
         Instantiate(animalPrefabs[animalIndex], spawnPos, animalPrefabs[animalIndex].transform.rotation);
     }
 }
