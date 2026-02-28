@@ -266,6 +266,8 @@ MonoBehaviour:
   - {fileID: 7470879490442549239, guid: a901b9308ade7d84fa44cb6986e84ad1, type: 3}
   spawnPosX: 20
   spawnPosZ: 5
+  startDelay: 2
+  interval: 3
 --- !u!1 &425805626
 GameObject:
   m_ObjectHideFlags: 0
