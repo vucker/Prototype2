@@ -242,7 +242,7 @@ Transform:
   m_GameObject: {fileID: 425347007}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.088301, y: -3.6244898, z: 27.9}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -261,10 +261,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animalPrefabs:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  animalIndex: 0
+  - {fileID: 2558633280519831758, guid: cf149c3d64b1975498feef95a38fd900, type: 3}
+  - {fileID: 7470879490442549239, guid: a901b9308ade7d84fa44cb6986e84ad1, type: 3}
+  - {fileID: 8155359036915986605, guid: 9d7e380119674b64a9329eea288f97cd, type: 3}
+  animalIndex: 1
 --- !u!1 &425805626
 GameObject:
   m_ObjectHideFlags: 0
@@ -1080,10 +1080,10 @@ SceneRoots:
   m_Roots:
   - {fileID: 534669905}
   - {fileID: 170076735}
+  - {fileID: 425347008}
   - {fileID: 992285706}
   - {fileID: 892952407}
   - {fileID: 320534339691648250}
   - {fileID: 8958089354845040906}
   - {fileID: 7300386879777050183}
   - {fileID: 1212118663253104735}
-  - {fileID: 425347008}
