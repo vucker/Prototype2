@@ -17,7 +17,7 @@ public class PlayerController : MonoBehaviour
         else if (transform.position.x < -xRange)
             transform.position = new Vector3(-xRange, transform.position.y, transform.position.z);
 
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             Instantiate(projectileObject, transform.position, projectileObject.transform.rotation);
         }
