@@ -262,8 +262,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animalPrefabs:
   - {fileID: 2558633280519831758, guid: cf149c3d64b1975498feef95a38fd900, type: 3}
-  - {fileID: 7470879490442549239, guid: a901b9308ade7d84fa44cb6986e84ad1, type: 3}
   - {fileID: 8155359036915986605, guid: 9d7e380119674b64a9329eea288f97cd, type: 3}
+  - {fileID: 7470879490442549239, guid: a901b9308ade7d84fa44cb6986e84ad1, type: 3}
   spawnPosX: 20
   spawnPosZ: 5
 --- !u!1 &425805626
