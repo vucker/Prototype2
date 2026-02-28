@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 803395593835695329}
   - component: {fileID: 7984508066530805505}
   - component: {fileID: 6427754896939475206}
+  - component: {fileID: 5620229868790865060}
   m_Layer: 0
   m_Name: Sandwich
   m_TagString: Untagged
@@ -97,3 +98,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 50
+--- !u!114 &5620229868790865060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5962062494863430872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a40a979f9e112bc488594ad2763835e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
