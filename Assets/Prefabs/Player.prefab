@@ -339,7 +339,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3e39bd096e7a3248abce16e0ebf88cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 60
+  speed: 30
   projectileObject: {fileID: 5962062494863430872, guid: 1533dfc62b2f3994fb5a4cd5f70fef41, type: 3}
   horizontalInput: 0
   verticalInput: 0

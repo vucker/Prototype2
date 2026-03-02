@@ -32,8 +32,8 @@ public class PlayerController : MonoBehaviour
         //Передвижение по горизонтальной осм
         horizontalInput = Input.GetAxis("Horizontal");
         verticalInput = Input.GetAxis("Vertical");
-
-        Vector3 movement = new Vector3(horizontalInput, 0, verticalInput * speed * Time.deltaTime);
+        Vector3 inputVector = new Vector3(horizontalInput, 0, verticalInput);
+        Vector3 movement = inputVector * speed * Time.deltaTime;
         transform.Translate(movement);
 
         //Игровоя зона

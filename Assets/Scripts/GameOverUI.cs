@@ -23,7 +23,7 @@ public class GameOverUI : MonoBehaviour
     bool isRestart;
 
     private string gameWin =  "Это невероятно!";
-    private string gameLose = "Животные вас съели!";
+    private string gameLose = "Животные вас затоптали!";
 
     private GameManager gameManager;
     private void Awake()
