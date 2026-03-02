@@ -190,7 +190,6 @@ MonoBehaviour:
   gameOverText: {fileID: 669059469}
   finalScoreText: {fileID: 2117779848}
   restartButton: {fileID: 1883392137}
-  fadeInTime: 0.5
   gameSceneName: Prototype 2
 --- !u!114 &33333112
 MonoBehaviour:
@@ -1552,7 +1551,7 @@ GameObject:
   - component: {fileID: 1574784637}
   - component: {fileID: 1574784636}
   m_Layer: 5
-  m_Name: StartScreen
+  m_Name: StartScreenPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
