@@ -862,6 +862,7 @@ GameObject:
   - component: {fileID: 7479633307071555132}
   - component: {fileID: 6153563296470260396}
   - component: {fileID: 6136501550148445976}
+  - component: {fileID: 4431844195672302196}
   - component: {fileID: 6001565829573038769}
   - component: {fileID: 8058794539024568596}
   - component: {fileID: 300366691422348641}
@@ -966,6 +967,21 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.17316134, y: 0.49057445, z: 0.39652675}
   m_Center: {x: 0.0019594075, y: 0.23120193, z: 0.047024}
+--- !u!114 &4431844195672302196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7470879490442549239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b9a9e4777bef064c8c8947fb6fcafc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameAnimal: 
+  maxSatiety: 0
+  currentSatiety: 0
 --- !u!114 &6001565829573038769
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -978,7 +994,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a40a979f9e112bc488594ad2763835e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 0}
 --- !u!114 &8058794539024568596
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1004,3 +1019,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11ef87e3d6489a746987a9ff7691173d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animal: {fileID: 0}

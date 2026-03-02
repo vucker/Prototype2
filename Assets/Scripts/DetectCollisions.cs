@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class DetectCollisions : MonoBehaviour
 {
+    [SerializeField] private Animal animal;
     private GameManager gameManager;
 
     private void Start()
@@ -32,9 +33,16 @@ public class DetectCollisions : MonoBehaviour
         }
         else if (other.CompareTag("Projectile"))
         {
-            Destroy(gameObject);
+            animal.AddSatiety();
             Destroy(other.gameObject);
-            gameManager.AddScore();
+
+            if (animal.IsFed())
+            {
+                Destroy(gameObject);
+                Destroy(other.gameObject);
+                gameManager.AddScore();
+
+            }
         }
     }
 }
