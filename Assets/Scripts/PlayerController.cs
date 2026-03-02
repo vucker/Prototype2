@@ -4,12 +4,21 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    [SerializeField] private GameManager gameManager; 
+
     public float speed = 10f;
-    public Vector2 areaX = new Vector2(-23f, 23f);
-    public Vector2 areaZ = new Vector2(-3f, 23f);
+
     public GameObject projectileObject;
     public float horizontalInput;   
     public float verticalInput;
+    private void Start()
+    {
+        if (gameManager == null)
+        {
+            Debug.Log($"{nameof(gameManager)} отсуствует");
+            return;
+        }
+    }
     void Update()
     {
         Movement();
@@ -26,8 +35,8 @@ public class PlayerController : MonoBehaviour
         transform.Translate(movement);
 
         //Игровоя зона
-        float clampX = Mathf.Clamp(transform.position.x, areaX.x, areaX.y);
-        float clampZ = Mathf.Clamp(transform.position.z, areaZ.x, areaZ.y);
+        float clampX = Mathf.Clamp(transform.position.x, gameManager.areaX.x, gameManager.areaX.y);
+        float clampZ = Mathf.Clamp(transform.position.z, gameManager.areaZ.x, gameManager.areaZ.y);
         transform.position = new Vector3(clampX, transform.position.y, clampZ);
     }
     void ToThrow()
