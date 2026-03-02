@@ -4,18 +4,29 @@ using UnityEngine;
 
 public class DestroyOutOfBounds : MonoBehaviour
 {
-    private float topBound = 23f;
-    private float downBound = -13f;
+    private GameManager gameManager;
+
+    private void Start()
+    {
+        // Находим GameManager в сцене автоматически
+        gameManager = FindObjectOfType<GameManager>();
+
+        if (gameManager == null)
+        {
+            Debug.Log($"{nameof(gameManager)} отсуствует");
+            return;
+        }
+    }
 
     void Update()
     {
         //условие для уничтожения снарядов
-        if (transform.position.z > topBound)
+        if (transform.position.z > gameManager.areaZ.y)
         {
             Destroy(gameObject);
         }
         //условие для уничтожения животных и поражения
-        else if (transform.position.z < downBound)
+        else if (transform.position.z < gameManager.areaZ.x)
         {
             Debug.Log("Game Over");
             Destroy(gameObject);

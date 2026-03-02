@@ -211,10 +211,10 @@ GameObject:
   m_Component:
   - component: {fileID: 7167201227516434831}
   - component: {fileID: 5500619466396352502}
-  - component: {fileID: 42533830428077559}
-  - component: {fileID: 7614602900466851480}
   - component: {fileID: -2192023161706488427}
   - component: {fileID: 4493565284566793231}
+  - component: {fileID: 7614602900466851480}
+  - component: {fileID: 42533830428077559}
   - component: {fileID: 3286640282125311968}
   m_Layer: 0
   m_Name: Chicken
@@ -267,31 +267,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &42533830428077559
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2558633280519831758}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 132bb9d62306274439bad7166c7fba97, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 20
---- !u!114 &7614602900466851480
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2558633280519831758}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a40a979f9e112bc488594ad2763835e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &-2192023161706488427
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -340,6 +315,32 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 5.5696106, y: 17.824965, z: 19.024635}
   m_Center: {x: -0.1735115, y: 6.9950056, z: 0.7577914}
+--- !u!114 &7614602900466851480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2558633280519831758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a40a979f9e112bc488594ad2763835e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
+--- !u!114 &42533830428077559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2558633280519831758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 132bb9d62306274439bad7166c7fba97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 20
 --- !u!114 &3286640282125311968
 MonoBehaviour:
   m_ObjectHideFlags: 0

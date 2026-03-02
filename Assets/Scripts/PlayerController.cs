@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] private GameManager gameManager; 
+    private GameManager gameManager; 
 
     public float speed = 10f;
 
@@ -13,6 +13,8 @@ public class PlayerController : MonoBehaviour
     public float verticalInput;
     private void Start()
     {
+        gameManager = FindObjectOfType<GameManager>();
+
         if (gameManager == null)
         {
             Debug.Log($"{nameof(gameManager)} отсуствует");
