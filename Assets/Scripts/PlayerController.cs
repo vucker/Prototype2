@@ -28,7 +28,6 @@ public class PlayerController : MonoBehaviour
         //Игровоя зона
         float clampX = Mathf.Clamp(transform.position.x, areaX.x, areaX.y);
         float clampZ = Mathf.Clamp(transform.position.z, areaZ.x, areaZ.y);
-
         transform.position = new Vector3(clampX, transform.position.y, clampZ);
     }
     void ToThrow()
