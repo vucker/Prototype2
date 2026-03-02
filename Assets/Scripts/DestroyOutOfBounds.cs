@@ -28,20 +28,12 @@ public class DestroyOutOfBounds : MonoBehaviour
 
 
         //условие для уничтожения животных и поражения
-        else if (transform.position.x < SetGameArea().x ||
-            transform.position.x > SetGameArea().x ||
-            transform.position.z < SetGameArea().y ||
-            transform.position.z > SetGameArea().y)
+        else if (transform.position.x < gameManager.areaX.x ||
+            transform.position.x > gameManager.areaX.y ||
+            transform.position.z < gameManager.areaZ.x ||
+            transform.position.z > gameManager.areaZ.y)
         {
-            Debug.Log("Game Over");
             Destroy(gameObject);
         }
-    }
-    Vector2 SetGameArea()
-    {
-        float clampX = Mathf.Clamp(transform.position.x, gameManager.areaX.x, gameManager.areaX.y);
-        float clampZ = Mathf.Clamp(transform.position.z, gameManager.areaZ.x, gameManager.areaZ.y);
-        Vector2 gameArea = new Vector3(clampX, clampZ);
-        return gameArea;
     }
 }
