@@ -7,6 +7,15 @@ public class DetectCollisions : MonoBehaviour
     private Animal animal;
     private GameManager gameManager;
 
+    private void Awake()
+    {
+        animal = GetComponent<Animal>();
+        if (gameManager == null)
+        {
+            Debug.Log($"{nameof(gameManager)} отсуствует");
+            return;
+        }
+    }
     private void Start()
     {
         gameManager = FindObjectOfType<GameManager>();
@@ -16,12 +25,7 @@ public class DetectCollisions : MonoBehaviour
             Debug.Log($"{nameof(gameManager)} отсуствует");
             return;
         }
-        animal = GetComponent<Animal>();
-        if (gameManager == null)
-        {
-            Debug.Log($"{nameof(gameManager)} отсуствует");
-            return;
-        }
+        
     }
     //Обнаружение столкновения триггера
     private void OnTriggerEnter(Collider other)
