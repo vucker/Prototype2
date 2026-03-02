@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DetectCollisions : MonoBehaviour
 {
-    [SerializeField] private Animal animal;
+    private Animal animal;
     private GameManager gameManager;
 
     private void Start()
@@ -12,6 +12,12 @@ public class DetectCollisions : MonoBehaviour
         gameManager = FindObjectOfType<GameManager>();
 
         if  ( gameManager == null)
+        {
+            Debug.Log($"{nameof(gameManager)} отсуствует");
+            return;
+        }
+        animal = GetComponent<Animal>();
+        if (gameManager == null)
         {
             Debug.Log($"{nameof(gameManager)} отсуствует");
             return;
