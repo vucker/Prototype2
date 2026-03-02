@@ -21,16 +21,14 @@ public class DetectCollisions : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            if (!gameManager.IsDie())
-            {
-                gameManager.AddHP();
-                Destroy(gameObject);
-            }
-            else
+            gameManager.AddHP();
+            Destroy(gameObject);
+            if (gameManager.IsDie())
             {
                 Debug.Log("Game Over");
                 Destroy(other.gameObject);
             }
+
         }
         else
         {

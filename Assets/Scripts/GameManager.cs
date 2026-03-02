@@ -17,6 +17,8 @@ public class GameManager : MonoBehaviour
     {
         currentHP = maxHP;
         score = 0;
+        Debug.Log($"Текущий запас здоровья: {currentHP}");
+        Debug.Log($"Текущий счёт: {score}");
     }
     private void OnDrawGizmos()
     {
