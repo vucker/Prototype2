@@ -14,6 +14,12 @@ public class GameManager : MonoBehaviour
     public int currentHP = 0;
     public int score = 0;
 
+    private GameOverUI gameOverUI;
+
+    private void Awake()
+    {
+        gameOverUI = GetComponent<GameOverUI>();
+    }
     private void Start()
     {
         currentHP = maxHP;
@@ -44,7 +50,7 @@ public class GameManager : MonoBehaviour
         score += addAmount;
         Debug.Log($"Вы убили: {name}! Получите счёт: {addAmount}!");
     }
-    public void TotalScore() => Debug.Log($"Текущий счёт: {score}!");
+    public string TotalScore() => $"Текущий счёт: {score}!";
     public bool IsDie() => currentHP <= 0;
 
 
