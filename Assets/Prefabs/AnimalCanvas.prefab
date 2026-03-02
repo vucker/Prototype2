@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1708729589246904419}
   - component: {fileID: 1944196903450885353}
   - component: {fileID: 1941752786941697745}
+  - component: {fileID: 799060068411695691}
   m_Layer: 0
   m_Name: BarFill
   m_TagString: Untagged
@@ -75,6 +76,20 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &799060068411695691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1088694004691867757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ced922e7dcfd59d478536b2f43c3ce23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorBG: {r: 0, g: 0, b: 0, a: 1}
+  colorFill: {r: 0, g: 1, b: 0, a: 1}
 --- !u!1 &3493204074516982243
 GameObject:
   m_ObjectHideFlags: 0
@@ -103,7 +118,7 @@ RectTransform:
   m_GameObject: {fileID: 3493204074516982243}
   m_LocalRotation: {x: 0, y: 0.7071068, z: -0.7071068, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.049999997, y: 0.049999997, z: 0.049999997}
+  m_LocalScale: {x: 0.075, y: 0.075, z: 0.075}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1854829121284011510}
@@ -159,7 +174,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &6300122758025275047
 MonoBehaviour:
   m_ObjectHideFlags: 0

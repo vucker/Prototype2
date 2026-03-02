@@ -10,9 +10,9 @@ public class DetectCollisions : MonoBehaviour
     private void Awake()
     {
         animal = GetComponent<Animal>();
-        if (gameManager == null)
+        if (animal == null)
         {
-            Debug.Log($"{nameof(gameManager)} отсуствует");
+            Debug.Log($"{nameof(animal)} отсуствует");
             return;
         }
     }
@@ -48,7 +48,7 @@ public class DetectCollisions : MonoBehaviour
 
             if (animal.IsFed())
             {
-                Destroy(gameObject);
+                Destroy(gameObject, 0.1f);
                 Destroy(other.gameObject);
                 gameManager.AddScore(animal.nameAnimal, animal.feedScore);
                 gameManager.TotalScore();
