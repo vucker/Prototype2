@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
     public Vector2 areaZ = new Vector2(-3f, 23f);
     public Color gizmosColor = Color.green;
     [Header("Настройки счётчиков")]
-    public int maxHP = 3;
+    private int maxHP = 3;
     public int currentHP = 0;
     public int score = 0;
 
