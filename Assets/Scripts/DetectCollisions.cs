@@ -30,7 +30,7 @@ public class DetectCollisions : MonoBehaviour
             }
 
         }
-        else
+        else if (other.CompareTag("Projectile"))
         {
             Destroy(gameObject);
             Destroy(other.gameObject);
