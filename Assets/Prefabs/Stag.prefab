@@ -979,9 +979,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b9a9e4777bef064c8c8947fb6fcafc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameAnimal: 
-  maxSatiety: 0
+  nameAnimal: "\u041E\u043B\u0435\u043D\u044C"
+  maxSatiety: 3
   currentSatiety: 0
+  feedScore: 5
 --- !u!114 &6001565829573038769
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1019,4 +1020,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11ef87e3d6489a746987a9ff7691173d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animal: {fileID: 0}
+  animal: {fileID: 4431844195672302196}

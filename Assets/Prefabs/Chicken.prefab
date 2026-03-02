@@ -328,9 +328,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b9a9e4777bef064c8c8947fb6fcafc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameAnimal: 
-  maxSatiety: 0
+  nameAnimal: "\u041A\u0443\u0440\u0438\u0446\u0430"
+  maxSatiety: 1
   currentSatiety: 0
+  feedScore: 1
 --- !u!114 &7614602900466851480
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -355,7 +356,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 132bb9d62306274439bad7166c7fba97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20
+  speed: 2
 --- !u!114 &3286640282125311968
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -368,7 +369,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11ef87e3d6489a746987a9ff7691173d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animal: {fileID: 0}
+  animal: {fileID: -4419546988449026843}
 --- !u!1 &3072640632263623039
 GameObject:
   m_ObjectHideFlags: 0

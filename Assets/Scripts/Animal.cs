@@ -7,6 +7,7 @@ public class Animal : MonoBehaviour
     public string nameAnimal = string.Empty;
     public int maxSatiety = 0;
     public int currentSatiety = 0;
+    public int feedScore = 0;
 
     private void Start()
     {

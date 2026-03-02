@@ -40,7 +40,8 @@ public class DetectCollisions : MonoBehaviour
             {
                 Destroy(gameObject);
                 Destroy(other.gameObject);
-                gameManager.AddScore();
+                gameManager.AddScore(animal.nameAnimal, animal.feedScore);
+                gameManager.TotalScore();
 
             }
         }

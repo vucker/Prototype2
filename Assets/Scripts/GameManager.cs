@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class GameManager : MonoBehaviour
 {
@@ -38,11 +39,12 @@ public class GameManager : MonoBehaviour
         currentHP += addAmount;
         Debug.Log($"Текущий запас здоровья: {currentHP}");
     }
-    public void AddScore(int addAmount = 1)
+    public void AddScore(string name, int addAmount = 1)
     {
         score += addAmount;
-        Debug.Log($"Текущий счёт: {score}");
+        Debug.Log($"Вы убили: {name}! Получите счёт: {addAmount}!");
     }
+    public void TotalScore() => Debug.Log($"Текущий счёт: {score}!");
     public bool IsDie() => currentHP <= 0;
 
 
