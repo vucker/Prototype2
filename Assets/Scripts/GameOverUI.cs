@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameOverUI : MonoBehaviour
@@ -20,6 +21,8 @@ public class GameOverUI : MonoBehaviour
     [SerializeField] private float fadeInTime = 0.5f;
     [SerializeField] private string gameSceneName = "Game";
 
+    bool isRestart;
+
     private GameManager gameManager;
     private void Awake()
     {
@@ -28,19 +31,27 @@ public class GameOverUI : MonoBehaviour
     private void Start()
     {
         GameOverHide();
+        restartButton.onClick.AddListener(Restart);
     }
     private void Update()
     {
-        if (gameManager.IsDie())
+        if (gameManager.IsDie() && !isRestart)
             GameOverShow();
     }
-    public void GameOverShow()
+    private void GameOverShow()
     {
+        Time.timeScale = 0f;
         finalScoreText.text = gameManager.TotalScore();
         gameOverPanel.SetActive(true);
     }
-    public void GameOverHide()
+    private void GameOverHide()
     {
         gameOverPanel.SetActive(false);
+    }
+    public void Restart()
+    {
+        isRestart = true;
+        Time.timeScale = 1f;
+        SceneManager.LoadScene($"{gameSceneName}");
     }
 }

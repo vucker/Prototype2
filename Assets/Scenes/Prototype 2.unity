@@ -190,7 +190,7 @@ MonoBehaviour:
   finalScoreText: {fileID: 2117779848}
   restartButton: {fileID: 1883392137}
   fadeInTime: 0.5
-  gameSceneName: Game
+  gameSceneName: Prototype 2
 --- !u!114 &33333112
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1781,7 +1781,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1883392138}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11500000, guid: b0eba1a620e0d0849bab609876c886d1, type: 3}
+        m_TargetAssemblyTypeName: UnityEngine.Object, UnityEngine
+        m_MethodName: set_name
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1883392138
 MonoBehaviour:
   m_ObjectHideFlags: 0
