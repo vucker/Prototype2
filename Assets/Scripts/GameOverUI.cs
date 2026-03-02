@@ -41,14 +41,12 @@ public class GameOverUI : MonoBehaviour
         {
 
             gameOverText.text = gameLose;
-            gameOverText.color = Color.red;
             GameOverShow();
         }
         else if (gameManager.IsWin() && !isRestart)
         {
 
             gameOverText.text = gameWin;
-            gameOverText.color = Color.yellow;
             GameOverShow();
         }
     }

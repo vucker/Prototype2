@@ -22,10 +22,6 @@ public class GameManagerUI : MonoBehaviour
             return;
         }
     }
-    private void Start()
-    {
-        score.color = Color.white;
-    }
     private void Update()
     {
         RefreshScore();
@@ -43,6 +39,7 @@ public class GameManagerUI : MonoBehaviour
             {
                 hearts[i].enabled = i < gameManager.currentHP;
             }
-        }
+            }
     }
+
 }
