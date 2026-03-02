@@ -13,6 +13,8 @@ public class GameManager : MonoBehaviour
     private int maxHP = 3;
     public int currentHP = 0;
     public int score = 0;
+    public int scoreMax = 9999;
+
 
     private GameOverUI gameOverUI;
 
@@ -50,8 +52,9 @@ public class GameManager : MonoBehaviour
         score += addAmount;
         Debug.Log($"Вы убили: {name}! Получите счёт: {addAmount}!");
     }
-    public string TotalScore() => $"Текущий счёт: {score}!";
+    private int CheckTotalScore() => score = Mathf.Clamp( score, 0, scoreMax);
+    public string TotalScore() => $"Текущий счёт: {CheckTotalScore()}!";
     public bool IsDie() => currentHP <= 0;
-
+    public bool IsWin() => score >= 9999;
 
 }

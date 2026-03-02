@@ -18,10 +18,12 @@ public class GameOverUI : MonoBehaviour
     [SerializeField] private Button restartButton;
 
     [Header("Настройки")]
-    [SerializeField] private float fadeInTime = 0.5f;
-    [SerializeField] private string gameSceneName = "Game";
+    [SerializeField] private string gameSceneName = "Prototype 2";
 
     bool isRestart;
+
+    private string gameWin =  "Это невероятно!";
+    private string gameLose = "Животные вас съели!";
 
     private GameManager gameManager;
     private void Awake()
@@ -36,7 +38,17 @@ public class GameOverUI : MonoBehaviour
     private void Update()
     {
         if (gameManager.IsDie() && !isRestart)
+        {
+
+            gameOverText.text = gameLose;
             GameOverShow();
+        }
+        else if (gameManager.IsWin() && !isRestart)
+        {
+
+            gameOverText.text = gameWin;
+            GameOverShow();
+        }
     }
     private void GameOverShow()
     {
